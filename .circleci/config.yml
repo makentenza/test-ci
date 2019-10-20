@@ -11,6 +11,7 @@ jobs:
       - image: quay.io/ansible/molecule:latest
     steps:
       - checkout
+      - run: ls -ltr
       - run: molecule test
 workflows:
   version: 2

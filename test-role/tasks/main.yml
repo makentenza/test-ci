@@ -1,0 +1,5 @@
+---
+# tasks file for test-role
+
+- name: Create dummy file
+  shell: echo 'test file' > /tmp/test-file
