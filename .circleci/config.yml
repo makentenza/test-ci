@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run: molecule test
 workflows:
-  version: 3
+  version: 2
   role_testing:
     jobs:
       - mversion
