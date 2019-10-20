@@ -11,7 +11,8 @@ jobs:
     steps:
       # This step installs Molecule using Pip
       - name: Install
-        run: sudo pip install molecule
+        run: sudo -H pip install molecule
       # This step tests Molecule after installing
-      - name: Test 
-        run: molecule check
+      - name: Test
+        uses: actions/checkout@v1
+        run: tree && ls -ltrh
