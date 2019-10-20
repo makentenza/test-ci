@@ -9,10 +9,10 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       # This step installs Molecule using Pip
       - name: Install
         run: sudo -H pip install molecule
       # This step tests Molecule after installing
       - name: Test
-        uses: actions/checkout@v1
         run: tree && ls -ltrh
