@@ -11,7 +11,7 @@ jobs:
     steps:
       # This step installs Molecule using Pip
       - name: Install
-        run: pip install --user molecule
-      # This step prints an output (time) from the previous step's action.
+        run: sudo pip install molecule
+      # This step tests Molecule after installing
       - name: Test 
         run: molecule check
